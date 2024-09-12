@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+
+    /* Path Aliases */
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@core/*": ["src/core/*"],
+      "@services/*": ["src/core/services/*"],
+      "@types/*": ["src/core/types/*"],
+      "@features/*": ["src/features/*"],
+      "@pages/*": ["src/pages/*"],
+      "@routes/*": ["src/routes/*"],
+      "@hooks/*": ["src/shared/hooks/*"],
+      "@components/*": ["src/shared/components/*"],
+      "@ui/*": ["src/shared/ui/*"],
+      "@utils/*": ["src/shared/utils/*"]
+    }
+  },
+  "include": [
+    "src"
+  ],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
